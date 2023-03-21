@@ -11,14 +11,24 @@ document.querySelector("button").addEventListener("click", function(){
   const age = document.getElementById("age").value
 
   //PREZZO COMPLETO
-  let prezzocompleto = km * 0.21;
+  let prezzocompleto = km * prezzoKm;
 
-  //CALCOLO EVENTUALE SCONTO IN BASE ALL'ETÀ
-  if (age < 18) {
-    prezzocompleto -= (prezzocompleto * 0.2);
+  //CALCOLO EVENTUALE SCONTO IN BASE ALL'ETÀ esercizio 1
+  // if (age < 18) {
+    // prezzocompleto -= (prezzocompleto * 0.2);
 
-  }else if (age >= 65) {
-    prezzocompleto -= (prezzocompleto * 0.4);
+  // }else if (age >= 65) {
+    // prezzocompleto -= (prezzocompleto * 0.4);
+  // }
+
+  //CALCOLO EVENTUALE SCONTO IN BASE ALL'ETÀ esercizio 2
+  const Minorenne = "< 18"
+  const Over65 = ">= 65"
+
+  if (age === Minorenne) {
+    prezzocompleto -= (prezzocompleto * scontUnder18);
+  }else if (age === Over65){
+    prezzocompleto -= (prezzocompleto * scontOver65);
   }
 
 
