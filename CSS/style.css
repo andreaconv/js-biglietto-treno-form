@@ -54,16 +54,15 @@ h2
 
 /* INIZIO ABBELLIMENTI */
 
-/* input, select{
+input, select{
   border: 1px solid brown;
   border-radius: 3px;
   padding: 3px;
 }
 
 input::placeholder{
-  text-align: center;
   color: black;
-} */
+}
 
 /* FINE ABBELLIMENTI */
 
