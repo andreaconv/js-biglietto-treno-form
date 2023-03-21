@@ -22,7 +22,6 @@ document.querySelector("button").addEventListener("click", function(){
   const Minorenne = "< 18";
   const Over65 = ">= 65";
 
-
   if (age === Minorenne) {
     prezzocompleto -= (prezzocompleto * scontUnder18);
     discount = "Young"
@@ -31,22 +30,37 @@ document.querySelector("button").addEventListener("click", function(){
     discount = "Senior"
   }
 
-  const biglietto = document.querySelector(".print");
-  biglietto.classList.remove('hide');
-  
   // STAMPA 
+
+  // questo rende visibile il biglietto perchè toglie la classe 
+  const biglietto = document.querySelector(".print");
+  biglietto.classList.remove('hide');  
   
+  // questo prende il valore inserito nel nome  
   const name = document.getElementById("name").value;
+  // con questo prendo il tag dove voglio inserire il nome 
   const passeggero = document.getElementById("passeggero");
+  // cosi inserisco il nome preso nel tag 
   passeggero.innerHTML = `${name}`;
 
+  // questo inserisce il tipo di sconto 
   document.getElementById("discount").innerHTML = `${discount}`;
 
+  // CARRIAGE 
+  let carmin = 1
+  let carmax = 10
+  let carrozza = Math.floor(Math.random() * (carmax - carmin + 1) + carmin);
+  document.getElementById("carriage").innerHTML = `${carrozza}`;
+
+// CODECP 
+  let CPmin = 10000
+  let CPmax = 99999
+  let codice = Math.floor(Math.random() * (CPmax - CPmin + 1) + CPmin);
+  document.getElementById("codeCP").innerHTML = `${codice}`
 
 
-
+  // qui gestisco la stampa del prezzo 
   const price = document.getElementById('price');
-
   price.innerHTML = `
   &euro; ${prezzocompleto.toFixed(2)}
   `;
