@@ -27,3 +27,8 @@ Se non vi sentite particolarmente creativi, questa potrebbe essere un’implemen
 
 - Aggiungere un bottone “reset”
 - Aggiungere random il numero della carrozza e il CP
+
+## STEPS
+1. Inserisco i due input (km e età), il bottone per inviare e l'output per visualizzare dentro l'HTML 
+2. Prendendo spunto dall'esercizio precedente faccio i calcoli per il costo del biglietto  
+3. Stampo il risultato ottenuto dentro l'HTML
