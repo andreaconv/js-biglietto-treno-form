@@ -29,6 +29,8 @@ Se non vi sentite particolarmente creativi, questa potrebbe essere un’implemen
 - Aggiungere random il numero della carrozza e il CP
 
 ## STEPS
-1. Inserisco i due input (km e età), il bottone per inviare e l'output per visualizzare dentro l'HTML 
-2. Prendendo spunto dall'esercizio precedente faccio i calcoli per il costo del biglietto  
-3. Stampo il risultato ottenuto dentro l'HTML
+1. Inseisco le costanti e i dati dall'esercizio precedente;
+2. Inserisco i due input (km e età), il bottone per inviare e l'output per visualizzare dentro l'HTML 
+3. Prendendo spunto dall'esercizio precedente faccio i calcoli per il costo del biglietto  
+4. Stampo il risultato ottenuto dentro l'HTML
+5. Qunado tutti gli steps precedenti funzionano creo un form in HTML dove viene chiesto anche il nome per poter personalizzare il biglietto che verrà generato e stampato
