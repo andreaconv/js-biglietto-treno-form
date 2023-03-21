@@ -8,6 +8,10 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.hide{
+  display: none;
+}
+
 main{
   height: 100vh;
   background-color: brown;
